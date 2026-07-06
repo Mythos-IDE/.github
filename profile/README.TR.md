@@ -1,6 +1,6 @@
 # MythosIDE
 
-<p align="center">[English](./README.md) · Türkçe</p>
+<p align="center"><a href="./README.md">English</a> · Türkçe</p>
 
 **Karmaşık dünyalar inşa eden romancılar için geliştirilmiş bir yazar IDE'si.**
 

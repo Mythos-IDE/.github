@@ -1,6 +1,6 @@
 # MythosIDE
 
-<p align="center">English · [Türkçe](./README.TR.md)</p>
+<p align="center">English · <a href="./README.TR.md">Türkçe</a></p>
 
 **A writer's IDE for novelists building complex worlds.**
 
