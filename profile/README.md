@@ -1,6 +1,6 @@
 # MythosIDE
 
-[![Language: TR](https://img.shields.io/badge/dil-T%C3%BCrk%C3%A7e-red)](./README.TR.md)
+English · [Türkçe](./README.TR.md)
 
 **A writer's IDE for novelists building complex worlds.**
 

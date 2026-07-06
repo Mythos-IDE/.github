@@ -1,6 +1,6 @@
 # MythosIDE
 
-[![Language: EN](https://img.shields.io/badge/language-English-blue)](./README.md)
+[English](./README.md) · Türkçe
 
 **Karmaşık dünyalar inşa eden romancılar için geliştirilmiş bir yazar IDE'si.**
 
