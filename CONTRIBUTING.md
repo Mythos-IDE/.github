@@ -31,7 +31,7 @@ running tests).
 ## Contributor License Agreement
 
 We may introduce a lightweight CLA before merging external contributions, to
-keep licensing (see [LICENSE.md](./LICENSE.md)) unambiguous for everyone. If
+keep licensing (see [LICENSE.md](https://github.com/Mythos-IDE/mythoside-core/blob/main/LICENSE.md)) unambiguous for everyone. If
 so, this section will be updated with the process.
 
 ## Code of conduct
