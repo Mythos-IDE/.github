@@ -1,5 +1,7 @@
 # MythosIDE
 
+[Read this in Turkish (Türkçe)](./README.TR.md)
+
 **A writer's IDE for novelists building complex worlds.**
 
 We're building a desktop app for fantasy, sci-fi, and epic fiction writers who
