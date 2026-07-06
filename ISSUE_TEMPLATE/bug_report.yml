@@ -1,0 +1,75 @@
+name: 🐛 Bug Report
+description: Something isn't working as expected
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Since MythosIDE works
+        directly with your local files, please include as much detail as you
+        can — it helps us reproduce and fix issues faster.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: When I typed @CharacterName in a scene, the profile card didn't appear...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: The more precise, the faster we can fix it.
+      placeholder: |
+        1. Open a project with...
+        2. Type '@' followed by...
+        3. See error
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: MythosIDE version
+      description: Found in Help → About, or your build/commit hash.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or screenshots
+      description: Drag and drop images/logs here if you have them.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: data-risk
+    attributes:
+      label: Data safety
+      options:
+        - label: This bug did not cause any data loss in my project files
+          required: false
+        - label: I have a backup of the affected project (recommended before further testing)
+          required: false

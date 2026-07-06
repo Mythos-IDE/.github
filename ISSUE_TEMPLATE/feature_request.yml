@@ -1,0 +1,50 @@
+name: 💡 Feature Request
+description: Suggest an idea for MythosIDE
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening a feature request, it's worth checking existing
+        [Discussions](https://github.com/Mythos-IDE/mythoside-core/discussions) — larger ideas (new panels, changes
+        to the core file format, the free/Pro boundary) are usually easier to
+        shape there before becoming a formal issue.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: What are you trying to do that MythosIDE doesn't support today?
+      placeholder: When writing a series with 40+ characters, I can't easily see which ones haven't appeared in the last 3 chapters...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What would you like to happen? Rough ideas are fine.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any workarounds you're currently using, or other tools that do this well.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area does this affect?
+      options:
+        - Editor / writing experience
+        - World-building engine (characters, locations, cross-referencing)
+        - Project structure (Series/Book/Chapter/Scene)
+        - Local file format / sync
+        - Export (PDF/DOCX/EPUB)
+        - Other
+    validations:
+      required: true
