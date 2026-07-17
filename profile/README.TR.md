@@ -1,4 +1,4 @@
-# MythosIDE
+# Mythos
 
 <p align="center"><a href="./README.md">English</a> · Türkçe</p>
 
