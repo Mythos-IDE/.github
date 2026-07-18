@@ -1,43 +1,42 @@
 <div align="center">
-  <picture>
-    <img src="assets/readme/hero.svg" alt="Mythos - Roman Yazarları İçin Dünya Geliştirme Ortamı" width="100%">
-  </picture>
+  <img src="assets/readme/hero.svg" alt="Mythos — roman yazarları için bir dünya geliştirme ortamı; süreklilik hatalarını bir derleyicinin bug yakaladığı gibi yakalar" width="100%">
 </div>
 
 <p align="center"><a href="./README.md">English</a> · Türkçe</p>
 
-**Karmaşık dünyalar inşa eden romancılar için geliştirilmiş bir yazar IDE'si.**
+**Karmaşık dünyalar inşa eden romancılar için bir yazar IDE'si.**
 
-Kişisel not alma araçlarının sınırlarını aşan ve geleneksel kelime işlemcileri epik kurgular için fazla düzensiz bulan fantastik, bilimkurgu ve epik roman yazarları için bir masaüstü uygulaması geliştiriyoruz. Şöyle düşünün: Scrivener'ın yapısal disiplini ile bir yazılım IDE'sinin bağlamsal zekasının birleşimi.
+Genel not alma araçlarının sınırlarını aşan ve geleneksel kelime işlemcileri seri uzunluğundaki dünya kurgusu için fazla düzensiz bulan fantastik, bilimkurgu ve epik kurgu yazarları için bir masaüstü uygulaması geliştiriyoruz. Şöyle düşünün: Scrivener'ın yapısal disiplini ile bir yazılım IDE'sinin bağlamsal zekâsının birleşimi.
 
-## 📦 Ekosistem
+Mythos, tüm serinizi bir derleyicinin kod tabanını okuduğu gibi okur — böylece Birinci Kitap'ta ölen bir karakter, İkinci Kitap'ta ortam onu işaretlemeden usulca yeniden konuşamaz.
 
-Mythos, çekirdek motor, kullanıcı arayüzü ve dokümantasyon arasındaki görevleri ayırmak için çoklu depo (multi-repo) ekosistemi olarak inşa edilmiştir.
+## Ekosistem
 
-- [`mythoside-core`](https://github.com/Mythos-IDE/mythoside-core)  
-  Çekirdek motor, bilgi grafiği yöneticisi ve yerel SQLite sunucusu. **Rust** ile geliştirildi.
-- [`mythoside-ts`](https://github.com/Mythos-IDE/mythoside-ts)  
-  Masaüstü uygulaması ve kullanıcı arayüzü. **Tauri**, **React** ve **TypeScript** ile geliştirildi.
-- [`mythoside-website`](https://github.com/Mythos-IDE/mythoside-website)  
-  Resmi tanıtım sayfası ve dokümantasyon. **Vite** ve **React** ile geliştirildi.
+Mythos; motoru, arayüzü ve siteyi birbirinden ayıran çoklu depo (multi-repo) ekosistemi olarak inşa edilmiştir.
 
-## 🧠 Temel Felsefe
+| Depo | Nedir | Teknoloji |
+| --- | --- | --- |
+| [`mythoside-core`](https://github.com/Mythos-IDE/mythoside-core) | Motor — elyazması veri modeli, Markdown + YAML dosya formatı, dosya izleme ve stdio üzerinden bir JSON-RPC sunucusu (ağ portu yok). | Rust |
+| [`mythoside-ts`](https://github.com/Mythos-IDE/mythoside-ts) | Masaüstü istemcisi — motoru sidecar olarak barındıran editör yüzeyi. | Tauri · React · TypeScript |
+| [`mythoside-website`](https://github.com/Mythos-IDE/mythoside-website) | Tanıtım sayfası ve ürün hikâyesi. | Vite · React |
 
-- 📚 **Notlar için değil, kurgu için tasarlandı** — Kendi kendinize yapılandırmak zorunda kaldığınız bir sistem yerine, yerleşik Seri → Kitap → Bölüm → Sahne hiyerarşisi.
-- 🔗 **Bağlamsal dünya inşası** — Taslağınızdan ayrılmadan `@KarakterAdi` yazarak anında bağlamsal bir profil kartı alın.
-- 💾 **Her zaman yerel öncelikli (Local-first)** — Gerçek bilgi kaynağı, diskinizdeki düz Markdown + YAML üst verileridir. Romanınız hiçbir zaman bir sunucuya bağımlı kalmaz.
-- ⚡ **Hızlı** — Yerel bir SQLite (FTS5) indeksi, çapraz referans sorgularını hiçbir zaman bir önbellekten fazlası olmadan anında gerçekleştirir.
+## Temel Felsefe
 
-## 🤝 Katkıda Bulunun
+- **Notlar için değil, kurgu için** — kendiniz yapılandırmak zorunda kaldığınız bir sistem değil, yerleşik bir Seri → Kitap → Bölüm hiyerarşisi.
+- **Bağlamsal dünya inşası** — taslağınızdan ayrılmadan `@KarakterAdi` yazın ve anında bir profil kartı alın.
+- **Her zaman yerel öncelikli** — gerçek doğruluk kaynağı diskinizdeki düz Markdown + YAML üst verisidir. Romanınız bir sunucuya rehin değildir; anında çapraz referans için yerel bir SQLite (FTS5) indeksi, doğruluk kaynağı değil yeniden kurulabilir bir önbellek olarak planlanmaktadır.
+- **Tanılama olarak süreklilik** — ortam, dünya kurgusuna bir IDE'nin titizliğiyle yaklaşır: bir karaktere ölümünden sonra referans verin ya da onu aynı anda iki yere koyun, size söyler.
 
-Erken geliştirme aşaması. Gelişmeleri takip etmek, projelere yıldız vermek veya kurgu süreçlerinize uygun şekilde şekillenmesinde söz sahibi olmak için [Discussions](https://github.com/Mythos-IDE/mythoside-core/discussions) bölümüne katılabilirsiniz.
+## Katkıda Bulunun
 
-- **Sorunlar ve özellik fikirleri** → [Core Issues](https://github.com/Mythos-IDE/mythoside-core/issues) | [TS Issues](https://github.com/Mythos-IDE/mythoside-ts/issues)
+Erken geliştirme aşaması. Gelişmeleri takip edin, depolara yıldız verin veya epik uzunlukta kurgu yazıyor ve bunun nasıl şekilleneceğinde söz sahibi olmak istiyorsanız [Discussions](https://github.com/Mythos-IDE/mythoside-core/discussions) bölümüne katılın.
+
+- **Sorunlar ve özellik fikirleri** → [Core](https://github.com/Mythos-IDE/mythoside-core/issues) · [Desktop](https://github.com/Mythos-IDE/mythoside-ts/issues)
 - **Genel sorular** → [Discussions](https://github.com/Mythos-IDE/mythoside-core/discussions)
 - **Güvenlik raporları** → security@mythoside.com
 - **Diğer her şey** → hello@mythoside.com
 
 ---
 <div align="center">
-  <sub>Mythos Ekibi tarafından geliştirilen Açık Kaynaklı yazılım.</sub>
+  <sub>Mythos Ekibi tarafından geliştirilen açık kaynaklı yazılım.</sub>
 </div>
