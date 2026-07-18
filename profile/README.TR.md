@@ -33,8 +33,20 @@ Erken geliştirme aşaması. Gelişmeleri takip edin, depolara yıldız verin ve
 
 - **Sorunlar ve özellik fikirleri** → [Core](https://github.com/Mythos-IDE/mythoside-core/issues) · [Desktop](https://github.com/Mythos-IDE/mythoside-ts/issues)
 - **Genel sorular** → [Discussions](https://github.com/Mythos-IDE/mythoside-core/discussions)
-- **Güvenlik raporları** → security@mythoside.com
-- **Diğer her şey** → hello@mythoside.com
+
+## İletişim
+
+| Konu | E-posta |
+| --- | --- |
+| Genel sorular | hello@mythoside.com |
+| Destek ve yardım | support@mythoside.com |
+| Güvenlik raporları | security@mythoside.com |
+| Basın ve medya | press@mythoside.com |
+| Kariyer | jobs@mythoside.com |
+| Hukuk | legal@mythoside.com |
+| Sosyal ve topluluk | social@mythoside.com |
+
+Güvenlik açıklarını lütfen özel olarak **security@mythoside.com** adresine bildirin — herkese açık bir issue açmayın.
 
 ---
 <div align="center">

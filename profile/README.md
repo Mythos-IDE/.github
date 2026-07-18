@@ -33,8 +33,20 @@ Early development. Follow along, star the repositories, or jump into [Discussion
 
 - **Issues & feature ideas** → [Core](https://github.com/Mythos-IDE/mythoside-core/issues) · [Desktop](https://github.com/Mythos-IDE/mythoside-ts/issues)
 - **General questions** → [Discussions](https://github.com/Mythos-IDE/mythoside-core/discussions)
-- **Security reports** → security@mythoside.com
-- **Everything else** → hello@mythoside.com
+
+## Contact
+
+| Reach us about | Email |
+| --- | --- |
+| General questions | hello@mythoside.com |
+| Support & help | support@mythoside.com |
+| Security reports | security@mythoside.com |
+| Press & media | press@mythoside.com |
+| Careers | jobs@mythoside.com |
+| Legal | legal@mythoside.com |
+| Social & community | social@mythoside.com |
+
+Please report security vulnerabilities privately to **security@mythoside.com** — do not open a public issue.
 
 ---
 <div align="center">
